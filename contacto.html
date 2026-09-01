@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sabores de Cañas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sabores de Cañas</h1>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="lugares.html">Lugares</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </header>
+
+    <main class="contenedor grid-contacto">
+        <section class="form-seccion">
+            <h2>Envíanos una Consulta</h2>
+            <form id="contactForm">
+                <div class="grupo-input">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupo-input">
+                    <label for="mensaje">Mensaje o Sugerencia:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            <div id="formFeedback" class="feedback"></div>
+        </section>
+
+        <section class="directorio-contacto">
+            <h2>Contactos Directos</h2>
+
+            <div class="contacto-card">
+                <h3>Soda El Parque</h3>
+                <p>📍 Frente al Parque Central, Cañas</p>
+                <p>📞 Teléfono: +506 2669-0123</p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Restaurante Rancho Mandy’s</h3>
+                <p>📍 Ruta Cañas-Tilarán, 300m Norte de Compre Bien, Cañas</p>
+                <p>📞 Teléfono: +506 2669-4017</p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Soda La Central</h3>
+                <p>📍 Calle Central, Cañas Centro</p>
+                <p>📞 Teléfono: +506 2669-3290</p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Pizzería Papatonis</h3>
+                <p>📍 100m oeste de la Escuela Monseñor Luis Leipold, Cañas</p>
+                <p>📞 Teléfono: +506 2101-4846</p>
+            </div>
+
+            <div class="contacto-card">
+                <h3>Bastos Restaurant</h3>
+                <p>📍 Barrio San Martín, Cañas, Guanacaste</p>
+                <p>📞 Teléfono: +506 2669-3388</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Guía Web Gastronómica de Cañas by Josué Acuña - CTP Cañas</p>
+    </footer>
+
+    <button id="backToTop" class="top-btn">↑</button>
+    <script src="js/script.js"></script>
+</body>
+</html>
